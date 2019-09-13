@@ -1,0 +1,103 @@
+Algoritmo billetes
+	Definir total, billete500, billete100, billete50, billete20, billete10, billete5, billete2, billete1 Como Real
+	
+	Escribir "Ingrese una cantidad de Lempiras"
+	Leer total
+	
+	Escribir ""
+	Escribir "Esta cantidad se desglosa en:"
+	Mientras total >= 500
+		total=total-500
+		billete500=billete500+1
+	FinMientras
+	
+	Mientras total >= 100
+		total=total-100
+		billete100=billete100+1
+	FinMientras
+	
+	Mientras total >= 50
+		total=total-50
+		billete50=billete50+1
+	FinMientras
+	
+	Mientras total >= 20
+		total=total-20
+		billete20=billete20+1
+	FinMientras
+	
+	Mientras total >= 10
+		total=total-10
+		billete10=billete10+1
+	FinMientras
+	
+	Mientras total >= 5
+		total=total-5
+		billete5=billete5+1
+	FinMientras
+	
+	Mientras total >= 2
+		total=total-2
+		billete2=billete2+1
+	FinMientras
+	
+	Mientras total >= 1
+		total=total-1
+		billete1=billete1+1
+	FinMientras
+	
+	
+	
+	si billete500 > 1
+		Escribir "- ", billete500, " billetes de 500 Lempiras."
+	SiNo
+		Si billete500 >0
+			Escribir "- ", billete500, " billete de 500 Lempiras."
+		FinSi
+	FinSi
+	
+	si billete100 > 1
+		Escribir "- ", billete100, " billetes de 100 Lempiras."
+	SiNo
+		Si billete100 >0
+			Escribir "- ", billete100, " billete de 100 Lempiras."
+		FinSi
+	FinSi
+	
+	si billete50 > 1
+		Escribir "- ", billete50, " billetes de 50 Lempiras."
+	SiNo
+		Si billete50 >0
+			Escribir "- ", billete50, " billete de 50 Lempiras."
+		FinSi
+	FinSi
+	
+	si billete20 > 1
+		Escribir "- ", billete20, " billetes de 20 Lempiras."
+	SiNo
+		Si billete20 >0
+			Escribir "- ", billete20, " billete de 20 Lempiras."
+		FinSi
+	FinSi
+	
+	si billete10 > 0
+		Escribir "- ", billete10, " billete de 10 Lempiras."
+	FinSi
+	
+	si billete5 > 0
+		Escribir "- ", billete5, " billete de 5 Lempiras."
+	FinSi
+	
+	si billete2 > 1
+		Escribir "- ", billete2, " billetes de 2 Lempiras."
+	SiNo
+		Si billete2 >0
+			Escribir "- ", billete2, " billete de 2 Lempiras."
+		FinSi
+	FinSi
+	
+	si billete1 > 0
+		Escribir "- ", billete1, " billete de 1 Lempira."
+	FinSi
+	Escribir ""
+FinAlgoritmo
