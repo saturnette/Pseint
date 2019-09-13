@@ -1,0 +1,110 @@
+Algoritmo numeros_complejos
+	Definir a, b, c, d, op Como Real
+	Definir n como caracter
+	
+	Escribir "Ingrese dos números complejos mediante los siguientes pasos:"
+	
+	Escribir ""
+	Escribir "Ingrese la parte real del primer número complejo"
+	Leer a
+	Escribir "Ingrese la parte imaginaria del primer número complejo (no debe poner la i)"
+	Leer b
+	
+	Escribir ""
+	Escribir "Ingrese la parte real del segundo número complejo"
+	Leer c
+	Escribir "Ingrese la parte imaginaria del segundo número complejo (no debe poner la i)"
+	Leer d
+	Limpiar Pantalla
+	
+	Escribir "Estos son los números (si/no)"
+	Si b > 0
+		Escribir "(",a,"+",b,"i)"
+	SiNo
+		Escribir "(",a,b,"i)"
+	FinSi
+	
+	Si d > 0
+		Escribir "(",c,"+",d,"i)"
+	SiNo
+		Escribir "(",c,d,"i)"
+	FinSi
+	
+	Leer n
+	Limpiar Pantalla
+	Mientras n = "no"
+		Escribir "Ingrese dos números complejos mediante los siguientes pasos:"
+		
+		Escribir ""
+		Escribir "Ingrese la parte real del primer número complejo"
+		Leer a
+		Escribir "Ingrese la parte imaginaria del primer número complejo (no debe poner la i)"
+		Leer b
+		
+		Escribir ""
+		Escribir "Ingrese la parte real del segundo número complejo"
+		Leer c
+		Escribir "Ingrese la parte imaginaria del segundo número complejo (no debe poner la i)"
+		Leer d
+		Limpiar Pantalla
+		Escribir "Estos son los números (si/no)"
+		Si b > 0
+			Escribir "(",a,"+",b,"i)"
+		SiNo
+			Escribir "(",a,b,"i)"
+		FinSi
+		
+		Si d > 0
+			Escribir "(",c,"+",d,"i)"
+		SiNo
+			Escribir "(",c,d,"i)"
+		FinSi
+		Leer n
+		Limpiar Pantalla
+	FinMientras
+	Limpiar Pantalla
+	Escribir "Elija mediante un número (1 ó 2) la operación que desea realizar:"
+	Escribir "1 = Sumar"
+	Escribir "2 = Multiplicar"
+	
+	Leer op
+	Limpiar Pantalla
+	Mientras op > 2
+		Escribir "Elija mediante un número (1 ó 2) la operación que desea realizar:"
+		Escribir "1 = Sumar"
+		Escribir "2 = Multiplicar"
+		Escribir "Ingrese un número valido"
+		leer op
+		Limpiar Pantalla
+	FinMientras
+	Si op = 1
+		sumareal=a+c
+		sumacomplejo=b+d
+		Si sumacomplejo > 0
+			Escribir "La suma de los números complejos es: ",sumareal,"+",sumacomplejo, "i"
+		SiNo
+			Si sumacomplejo = 0
+				Escribir "Se eliminó la parte imaginaria al realizar la suma: ",sumareal
+			SiNo
+				Escribir "La suma de los números complejos es: ",sumareal,sumacomplejo, "i"
+			Finsi
+		Finsi
+	SiNo
+		multreal1=a*c
+		multreal2=a*d
+		multreal3=b*c
+		multreal4=b*d*(-1)
+		sumarcomplejo=multreal2+multreal3
+		sumarreal=multreal1+multreal4
+		Si sumarcomplejo > 0
+			Escribir "La multiplicación de los números complejos es: ",sumarreal,"+",sumarcomplejo, "i"
+		SiNo
+			Si sumarcomplejo = 0
+				Escribir "Se eliminó la parte imaginaria al realizar la multiplicación: ",sumarreal
+			SiNo
+				Escribir "La multiplicación de los números complejos es: ",sumarreal,sumarcomplejo, "i"
+			FinSi
+		Finsi
+	FinSi
+	
+FinAlgoritmo
